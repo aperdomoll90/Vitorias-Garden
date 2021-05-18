@@ -1,7 +1,28 @@
+
 {
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.12.9",
     "nodemon": "^2.0.7"
-  }
+  },
+  "name": "vics-garden",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aperdomoll90/Vitorias-Garden.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aperdomoll90/Vitorias-Garden/issues"
+  },
+  "homepage": "https://github.com/aperdomoll90/Vitorias-Garden#readme"
 }
