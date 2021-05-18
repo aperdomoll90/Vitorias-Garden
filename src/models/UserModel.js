@@ -10,12 +10,12 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  firstName:{
+  firstName: {
     type: String,
   },
-  lastName:{
+  lastName: {
     type: String,
-  }
+  },
 })
 
 mongoose.model('User', userSchema)
