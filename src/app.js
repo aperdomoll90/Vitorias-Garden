@@ -2,14 +2,13 @@ require('./models/UserModel')
 const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
-const cors =require('cors')
+const cors = require('cors')
 
 const authRoutes = require('./routes/authRoutes')
 
 const User = mongoose.model('User')
 
 app.use(cors())
-
 app.use(express.json())
 // app.use(authRoutes)
 
