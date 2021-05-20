@@ -2,13 +2,15 @@ require('./models/UserModel')
 const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
-const bodyParser = require('body-parser')
+const cors =require('cors')
 
 const authRoutes = require('./routes/authRoutes')
 
 const User = mongoose.model('User')
 
-app.use(bodyParser.json())
+app.use(cors())
+
+app.use(express.json())
 // app.use(authRoutes)
 
 const mongoUri =
@@ -34,6 +36,10 @@ app.listen('5000', () => {
 
 app.get('/', (req, res) => {
   res.send('Welcome to Vits Garden')
+})
+
+app.get('/users', (req, res) => {
+  User.find().then((allUsers) => res.status(200).json(allUsers))
 })
 
 app.post('/signup', (req, res) => {
