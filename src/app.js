@@ -13,7 +13,7 @@ app.use(express.json())
 // app.use(authRoutes)
 
 const mongoUri =
-  'mongodb+srv://admin:P@ssword@cluster0.2oi3i.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+ 'mongodb+srv://admin:P@ssword@vitssecretgarden.k8fty.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
